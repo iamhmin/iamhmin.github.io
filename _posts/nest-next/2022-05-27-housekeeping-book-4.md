@@ -7,9 +7,10 @@ tag : [nestjs, node.js, nextjs]
 
 ## 순서대로 보기
 nest.js + next.js 가계부 만들기                                            
-- [1. nest.js + next.js installation](https://iamhmin.github.io/nestjs/housekeeping-book-1/) 
-- [2. antd 설치 및 레이아웃 커스터마이징 ](https://iamhmin.github.io/nestjs/housekeeping-book-2/)       
-- [3. typeorm 설치와 mariaDB(mysql) 연동 ](https://iamhmin.github.io/nestjs/housekeeping-book-3/)       
+- [1. nest.js + next.js installation](https://iamhmin.github.io/nest-next/housekeeping-book-1/) 
+- [2. antd 설치 및 레이아웃 커스터마이징 ](https://iamhmin.github.io/nest-next/housekeeping-book-2/)       
+- [3. typeorm 설치와 mariaDB(mysql) 연동 ](https://iamhmin.github.io/nest-next/housekeeping-book-3/) 
+- [4. swagger 설치와 간단한 crud api 개발 ](https://iamhmin.github.io/nest-next/housekeeping-book-4/)  
 
 
 이번엔 모든 수입/지출 record를 return해주는 api를 만들어볼 것이다. 

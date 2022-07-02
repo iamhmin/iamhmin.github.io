@@ -5,6 +5,13 @@ categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 
+## 순서대로 보기
+nest.js + next.js 가계부 만들기                                            
+- [1. nest.js + next.js installation](https://iamhmin.github.io/nest-next/housekeeping-book-1/) 
+- [2. antd 설치 및 레이아웃 커스터마이징 ](https://iamhmin.github.io/nest-next/housekeeping-book-2/)       
+- [3. typeorm 설치와 mariaDB(mysql) 연동 ](https://iamhmin.github.io/nest-next/housekeeping-book-3/) 
+- [4. swagger 설치와 간단한 crud api 개발 ](https://iamhmin.github.io/nest-next/housekeeping-book-4/)  
+
 # 초기세팅
 
 [여기](https://dev.to/yakovlev_alexey/creating-a-project-with-nestjs-nextjs-3i1i)를 참고하여 세팅하고 있다. 위의 블로그에서는 이름 구별을 하기 위해 nest.js는 그대로 쓰고, next.js는 대문자로 NEXT.js라고 써서 나도 그렇게 쓰려고 한다.
