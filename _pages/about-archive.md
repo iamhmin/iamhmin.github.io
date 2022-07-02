@@ -2,6 +2,7 @@
 permalink: /about/
 title: About
 toc: true
+sidebar_main: true
 ---
 ## Biography
 
