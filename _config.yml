@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "custom" # "air", "aqua", "contrast", "dark", "dirt",
 
 # Site Settings
 locale                   : "ko-KR, en-US"
-title                    : "Ha-mmer"
-title_separator          : "|"
-subtitle                 : "always strive to be better"
+title                    : "Ha-mmer : always strive to be better"
+# title_separator          : "|"
+# subtitle                 : "always strive to be better"
 name                     : "Hannah Seong"
 description              : "Hannah's blog"
 url                      : "https://iamhmin.github.io"
