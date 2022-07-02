@@ -6,7 +6,6 @@ toc: true
 ## Biography
 
 ## Education
-### 
-### 중앙HTA 웹개발자 양성과정
+#### HTA Web Developer Training Course 2106st (2021.08 ~ 2022.02)
 
 ## Projects
