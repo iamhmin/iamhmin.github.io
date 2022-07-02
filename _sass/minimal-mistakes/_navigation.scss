@@ -80,17 +80,17 @@
       text-align: center;
       text-decoration: none;
       color: $muted-text-color;
-      border: 1px solid mix(#000, $border-color, 25%);
+      border: 1px solid $muted-text-color;
       border-radius: 0;
 
       &:hover {
-        color: $link-color-hover;
+        color: rgb(255, 45, 245);
       }
 
       &.current,
       &.current.disabled {
         color: #fff;
-        background: $primary-color;
+        background: rgba(rgb(255, 45, 245), 0.3)
       }
 
       &.disabled {
@@ -182,7 +182,7 @@
   a {
     display: block;
     margin: 0 1rem;
-    color: $masthead-link-color;
+    color: rgb(255, 217, 0);
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
@@ -198,6 +198,7 @@
 
     &.site-title {
       margin-left: 0;
+      color: rgb(0, 0, 0);
     }
   }
 
@@ -258,7 +259,7 @@
       }
     }
   }
-
+  
   .hidden-links {
     position: absolute;
     top: 100%;
@@ -424,6 +425,8 @@
     a {
       display: block;
       padding: 0.25em 0;
+      font-size: $type-size-6;
+      font-weight: bold;
 
       @include breakpoint($large) {
         padding-top: 0.125em;
@@ -490,13 +493,14 @@
 
 .nav__sub-title {
   display: block;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0 0;
   padding: 0.25rem 0;
+  color: rgb(255, 217, 0);
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
 }
 
 /*
