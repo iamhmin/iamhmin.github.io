@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 3 - typeorm 설치와 MariaDB 연동"
-categories : personal-project
+categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 

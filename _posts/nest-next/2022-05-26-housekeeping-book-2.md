@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 2 - ant Design 추가 및 기본 레이아웃"
-categories : personal-project
+categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 

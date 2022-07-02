@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 4 - swagger설치와 crud rest api개발"
-categories : personal-project
+categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 

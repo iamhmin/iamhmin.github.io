@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 5 - nest-next 패키지로 서버 통합하기"
-categories : personal-project
+categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 

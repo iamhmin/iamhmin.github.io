@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 1 - nest.js + next.js설치"
-categories : personal-project
+categories : nest-next
 tag : [nestjs, node.js, nextjs]
 ---
 
