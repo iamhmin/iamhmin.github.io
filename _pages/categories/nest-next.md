@@ -1,6 +1,7 @@
 ---
 title: "nest-next project"
 layout: archive
+classes: wide
 permalink: categories/nest-next
 author_profile: true
 sidebar_main: true
