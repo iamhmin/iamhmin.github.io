@@ -9,5 +9,5 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.nest-next %}
+{% assign posts = site.categories.python %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
