@@ -75,6 +75,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Security</span>  
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "oauth" %}
+                        <li><a href="/categories/oauth" class="">OAuth ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>  
         <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
