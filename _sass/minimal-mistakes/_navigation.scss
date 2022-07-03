@@ -425,7 +425,7 @@
     a {
       display: block;
       padding: 0.25em 0;
-      font-size: $type-size-6;
+      font-size: $type-size-5;
       font-weight: bold;
 
       @include breakpoint($large) {
@@ -497,7 +497,7 @@
   padding: 0.25rem 0;
   color: rgb(255, 217, 0);
   font-family: $sans-serif-narrow;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   font-weight: bold;
   text-transform: uppercase;
   // border-bottom: 1px solid $border-color;
