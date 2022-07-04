@@ -3,6 +3,7 @@ permalink: /about/
 title: About
 toc: true
 toc_label: Index
+toc_sticky: true
 sidebar_main: true
 ---
 

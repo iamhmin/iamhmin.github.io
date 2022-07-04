@@ -5,6 +5,9 @@ categories : nest-next
 tag : [nestjs, node.js, nextjs]
 author_profile: true
 sidebar_main: true
+toc: true
+toc_label: Index
+toc_sticky: true
 ---
 
 ## 순서대로 보기
