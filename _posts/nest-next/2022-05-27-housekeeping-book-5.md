@@ -20,11 +20,12 @@ nest.js + next.js 가계부 만들기
 
 처음에 참고했던 [여기](https://dev.to/yakovlev_alexey/creating-a-project-with-nestjs-nextjs-3i1i)에서 건너뛴 부분이 있었는데, nest-next 패키지 설치였다. 현재는 nest와 NEXT의 서버를 따로 사용하고 있는데, 하나의 서버만을 사용하기 위해 패키지 설치를 결정하였다. 생각보다 무척 간단하다.
 
-#### 1. 먼저 설치를 위해 아래를 터미널에서 실행해보자.
+## 1. nest-next package 설치
+먼저 설치를 위해 아래를 터미널에서 실행해보자.
 
 >$ yarn add nest-next
 
-#### 2. app.module.ts 수정
+## 2. app.module.ts 수정
 nest-next의 렌더모듈을 추가해주었다.
 
 
@@ -50,7 +51,7 @@ export class AppModule {}
 ```
 
 
-#### 3. app.controller.ts 수정
+## 3. app.controller.ts 수정
 
 
 

@@ -67,7 +67,7 @@ bootstrap();
 
 ![Alt text](/assets/images/20220527_120547492.png)
 
-#### 1. src/server/records/dto 폴더 생성 후 create-record.dto.ts 생성
+### 1. src/server/records/dto 폴더 생성 후 create-record.dto.ts 생성
 front단에서 받아올 정보를 담을 그릇이라고 생각하면 된다. 
 
 ```
@@ -82,7 +82,7 @@ export class CreateRecordDto {
 
 no값은 자동으로 증가되고, createdDate는 생성날짜이기 때문에 위의 세가지만 작성하였다.
 
-#### 2. records.service.ts 생성
+### 2. records.service.ts 생성
 
 ```
 import { Injectable } from '@nestjs/common';
@@ -120,7 +120,7 @@ export class RecordsService {
 create는 레코드를 생성하기 위한 메소드이고, findAll은 모든 레코드 return, remove는 기본키인 no를 사용하여 레코드를 삭제하기 위한 메소드이다.
 
 
-#### 3. records.controller.ts 생성
+### 3. records.controller.ts 생성
 endpoint가 될 controller를 작성한다.
 
 ```
@@ -151,7 +151,7 @@ export class RecordsController {
 }
 ```
 
-#### 4. records.module.ts 생성
+### 4. records.module.ts 생성
 
 ```
 import { Module } from '@nestjs/common';
@@ -168,7 +168,7 @@ import { Record } from './record.entity';
 export class RecordsModule {}
 ```
 
-#### 5. app.module.ts 에 record 모듈 추가
+### 5. app.module.ts 에 record 모듈 추가
 
 ```
 import { Module } from '@nestjs/common';

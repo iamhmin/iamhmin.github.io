@@ -17,11 +17,11 @@ nest.js + next.js 가계부 만들기
 - [3. typeorm 설치와 mariaDB(mysql) 연동 ](https://iamhmin.github.io/nest-next/housekeeping-book-3/) 
 - [4. swagger 설치와 간단한 crud api 개발 ](https://iamhmin.github.io/nest-next/housekeeping-book-4/)  
 
-# 초기세팅
+## 초기세팅
 
 [여기](https://dev.to/yakovlev_alexey/creating-a-project-with-nestjs-nextjs-3i1i)를 참고하여 세팅하고 있다. 위의 블로그에서는 이름 구별을 하기 위해 nest.js는 그대로 쓰고, next.js는 대문자로 NEXT.js라고 써서 나도 그렇게 쓰려고 한다.
 
-## nest.js installation
+### nest.js installation
 
 아래의 명령어를 터미널에 작성한다.
 >$ npx @nestjs/cli new housekeeping-book
@@ -46,7 +46,7 @@ nest.js + next.js 가계부 만들기
 
 완성!
 
-## NEXT.js installation
+### NEXT.js installation
 
 next와 react, react-dom을 설치해준다.
 

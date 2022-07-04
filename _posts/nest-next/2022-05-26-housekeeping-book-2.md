@@ -27,16 +27,16 @@ nest.js + next.js 가계부 만들기
 
 그리고 폴더정리를 좀 할것이다.
 
-### 1. App.css 생성
+## 1. App.css 생성
 client폴더에 utils폴더와 components폴더를 만든다. 그리고 utils폴더에 App.css파일을 추가한다. 
 
 >@import '~antd/dist/antd.css';
 를 추가해준다.
 
-### 2. CustomLayout.tsx, HeaderComponent.tsx 생성
+## 2. CustomLayout.tsx, HeaderComponent.tsx 생성
 src/client/components에 만들면 된다. 기본적인 Layout을 커스터마이징 할것이다.
 
-#### 먼저 헤더를 만든다.
+### 헤더 생성
 
 ```
 import React, { Component } from 'react';
@@ -73,7 +73,7 @@ class HeaderComponent extends Component {
 export default HeaderComponent;
 ```
 
-#### 레이아웃을 만든다.
+### 레이아웃을 만든다.
 ```
 import HeaderComponent from './HeaderComponent';
 import { Layout, Menu, Breadcrumb } from 'antd';
@@ -117,7 +117,7 @@ export default function CustomLayout({ children }) {
 }
 ```
 
-### 3. _app.tsx 수정
+## 3. _app.tsx 수정
 다음의 코드로 수정해준다.
 
 ```
@@ -139,7 +139,7 @@ export default App;
 ```
 
 
-### 4. index.tsx 수정
+## 4. index.tsx 수정
 
 main content가 들어가는 곳이다. 일단 어떻게 나오는지만 확인하기 위해 데이터를 하드코딩해보았다.
 

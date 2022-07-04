@@ -20,7 +20,7 @@ nest.js + next.js 가계부 만들기
 
 이번엔 typeORM설치를 통한 MariaDB연동을 하고, 테이블을 하나 만들어볼 것이다.
 
-### 1. MariaDB에 데이터베이스 만들고, vscode에 세팅하기.
+## 1. MariaDB에 데이터베이스 만들고, vscode에 세팅하기.
 
 DB는 마리아디비를 쓰기로 했다. 컴퓨터에 설치되어있었기 때문에^^; 
 
@@ -31,20 +31,20 @@ database를 만들었다. vscode에서 쉽게 확인하기 위해, 아래처럼 
 ![Alt text](/assets/images/20220526_175332299.png)
 
 
-### 2. Typeorm설치하기
+## 2. Typeorm설치하기
 이제 typeorm을 설치할 차례이다. 프로젝트 터미널로 가서 아래를 실행하여 typeorm을 설치하였다.
 
 >$yarn add mysql typeorm @nestjs/typeorm
 
 
-##### typeORM이란?
+### typeORM이란?
 node.js에서 실행되고 TypeScript로 작성된 객체 관계형매퍼 라이브러리이다.
 MySQL, PostgreSQL, MariaDB, SQLite 등 여러 데이터베이스를 지원한다.
 
 java에서 jpa를 사용했고, python에서 sqlalchemy를 사용해본 적이 있는데, 비슷하다고 생각하면 될 것 같다. 테이블을 자동으로 생성해준다는 장점이 있다.
 
 
-### 3. ormconfig.json생성
+## 3. ormconfig.json생성
 프로젝트 root폴더에 ormconfig.json을 만들고 다음과 같이 작성한다.
 
 
@@ -81,7 +81,7 @@ export class AppModule {}
 [nestjs 공식 문서 참조](https://docs.nestjs.com/techniques/database/) 
 
 
-### 4. entity를 이용하여 테이블 만들기.
+## 4. entity를 이용하여 테이블 만들기.
 간단하게 테이블 이름은 record로 하려고 한다.
 칼럼은 no, 날짜, type(income/expense), amount, remarks(비고) 정도로 만들 것이다.
 
