@@ -351,7 +351,9 @@
     label {
       position: relative;
       display: inline-block;
-      padding: 1.4em 1.4em 1.4em 1.4em;
+      padding: 0.5em 1em 0.5em 1em;
+      border-color: #f87092;
+      background-color: #f87092;
       color: $gray;
       font-size: $type-size-6;
       font-weight: bold;
