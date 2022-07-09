@@ -9,14 +9,13 @@ toc: true
 toc_label: Index
 toc_sticky: true
 ---
-
-## 순서대로 보기
+## RELATED POSTS  
 nest.js + next.js 가계부 만들기                                            
 - [1. nest.js + next.js installation](https://iamhmin.github.io/nest-next/housekeeping-book-1/) 
 - [2. antd 설치 및 레이아웃 커스터마이징 ](https://iamhmin.github.io/nest-next/housekeeping-book-2/)       
 - [3. typeorm 설치와 mariaDB(mysql) 연동 ](https://iamhmin.github.io/nest-next/housekeeping-book-3/) 
 - [4. swagger 설치와 간단한 crud api 개발 ](https://iamhmin.github.io/nest-next/housekeeping-book-4/)  
-
+- [5. nest-next 패키지로 서버 통합하기 ](https://iamhmin.github.io/nest-next/housekeeping-book-5/)  
 
 이번엔 모든 수입/지출 record를 return해주는 api를 만들어볼 것이다. 
 그리고 만들어진 api를 swagger를 설치해서 확인해보려고 한다. 

@@ -46,7 +46,7 @@ classes: wide
                       {%- include post__taxonomy.html -%}
                     {% endif %}
                   </small> 
-                    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+                    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 110 }}</p>{% endif %}
               </div>
             </article>
           {% endfor %}
