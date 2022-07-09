@@ -77,8 +77,8 @@
         <span class="nav__sub-title">Computer Science</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "blockchain" %}
-                        <li><a href="/categories/blockchain" class="">BlockChain ({{category[1].size}})</a></li>
+                    {% if category[0] == "os" %}
+                        <li><a href="/categories/os" class="">Operating System ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -86,6 +86,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "network" %}
                         <li><a href="/categories/network" class="">Network ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Blockchain</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "blockchainbg" %}
+                        <li><a href="/categories/blockchainbg" class="">Background Knowledge ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -109,6 +117,14 @@
                 {% for category in site.categories %}
                     {% if category[0] == "BJ" %}
                         <li><a href="/categories/bj" class="">baekjoon ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Etc</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "other-projects" %}
+                        <li><a href="/categories/other-projects" class="">other projects ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
