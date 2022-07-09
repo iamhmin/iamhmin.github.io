@@ -1,5 +1,5 @@
 ---
-title: "OAuth"
+title: "OAuth 2.0"
 layout: archive
 classes: wide
 permalink: categories/oauth

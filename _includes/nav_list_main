@@ -93,7 +93,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "oauth" %}
-                        <li><a href="/categories/oauth" class="">OAuth ({{category[1].size}})</a></li>
+                        <li><a href="/categories/oauth" class="">OAuth 2.0 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>  

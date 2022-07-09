@@ -1,5 +1,5 @@
 ---
-title: "nest-next project"
+title: "Project based on nest.js + next.js"
 layout: archive
 classes: wide
 permalink: categories/nest-next
