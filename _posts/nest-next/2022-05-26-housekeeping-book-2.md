@@ -38,7 +38,7 @@ src/client/components에 만들면 된다. 기본적인 Layout을 커스터마�
 
 ### 헤더 생성
 
-```
+``` javascript
 import React, { Component } from 'react';
 import { PageHeader, Button } from 'antd';
 
@@ -74,7 +74,7 @@ export default HeaderComponent;
 ```
 
 ### 레이아웃을 만든다.
-```
+``` javascript
 import HeaderComponent from './HeaderComponent';
 import { Layout, Menu, Breadcrumb } from 'antd';
 
@@ -120,7 +120,7 @@ export default function CustomLayout({ children }) {
 ## 3. _app.tsx 수정
 다음의 코드로 수정해준다.
 
-```
+``` javascript
 import '../client/utils/App.css';
 import CustomLayout from '../client/components/CustomLayout'
 import type { AppProps /*, AppContext */ } from 'next/app'
@@ -143,7 +143,7 @@ export default App;
 
 main content가 들어가는 곳이다. 일단 어떻게 나오는지만 확인하기 위해 데이터를 하드코딩해보았다.
 
-```
+``` javascript
 mport { FC } from 'react';
 import { Table } from 'antd'
 

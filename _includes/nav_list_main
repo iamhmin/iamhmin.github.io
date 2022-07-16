@@ -5,7 +5,7 @@
   <label for="ac-toc">category&nbsp;&nbsp;&nbsp;&nbsp;</label>
   <ul class="nav__items" id="category_tag_menu">
       <li>
-            <span>total {{sum}} posts</span> 
+            <span>&#127804; Total {{sum}} posts</span> 
       </li>
       <li>
         <span class="nav__sub-title">backend</span>
