@@ -1,5 +1,5 @@
 ---
-title: "JWT"
+title: "JWT(JSON Web Token)"
 layout: archive
 classes: wide
 permalink: categories/jwt
