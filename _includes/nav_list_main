@@ -92,8 +92,8 @@
         <span class="nav__sub-title">Blockchain</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "blockchainbg" %}
-                        <li><a href="/categories/blockchainbg" class="">Background Knowledge ({{category[1].size}})</a></li>
+                    {% if category[0] == "blockchain-basic" %}
+                        <li><a href="/categories/blockchain-basic" class="">Bblockchain-basic ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
