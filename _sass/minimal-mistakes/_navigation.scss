@@ -177,7 +177,7 @@
   -ms-flex-align: center;
   align-items: center;
   min-height: $nav-height;
-  background: $background-color;
+  background-color: dodgerblue;
 
   a {
     display: block;
@@ -186,6 +186,7 @@
     text-decoration: none;
     -webkit-transition: none;
     transition: none;
+    font-size: $type-size-4;
 
     &:hover {
       color: $masthead-link-color-hover;
@@ -198,7 +199,8 @@
 
     &.site-title {
       margin-left: 0;
-      color: rgb(0, 0, 0);
+      color: rgb(255, 217, 0);
+      font-size: $type-size-5;
     }
   }
 
@@ -514,15 +516,15 @@
   font-family: $sans-serif-narrow;
   color: $gray;
   background-color: $background-color;
-  border: 1.5px solid rgb(231, 113, 113);
+  border: 0.5px solid dodgerblue;
   border-radius: $border-radius;
   -webkit-box-shadow: $box-shadow;
   box-shadow: $box-shadow;
 
   .nav__title {
-    color: #fff;
+    color: white;
     font-size: $type-size-6;
-    background: rgb(231, 113, 113);
+    background: dodgerblue;
     border-top-left-radius: $border-radius;
     border-top-right-radius: $border-radius;
   }
@@ -550,7 +552,7 @@
     color: $muted-text-color;
     font-weight: bold;
     line-height: 1.5;
-    border-bottom: 1px solid rgb(231, 113, 113);
+    //border-bottom: 1px solid rgb(231, 113, 113);
 
     &:hover {
       color: rgb(255, 59, 75);
