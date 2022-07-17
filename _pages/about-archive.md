@@ -1,6 +1,7 @@
 ---
 permalink: /about/
 title: About
+layout: default
 toc: true
 toc_label: Index
 toc_sticky: true
