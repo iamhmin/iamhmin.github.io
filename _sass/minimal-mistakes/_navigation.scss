@@ -342,7 +342,7 @@
      ========================================================================== */
 
 .nav__list {
-  margin-bottom: 1.5em;
+  margin-bottom: 0.2em;
 
   input[type="checkbox"],
   label {
@@ -424,7 +424,7 @@
     }
 
     ul {
-      margin-bottom: 1em;
+      margin-bottom: 0.2em;
     }
 
     a {
@@ -503,7 +503,7 @@
 
 .nav__sub-title {
   display: block;
-  margin: 0.5rem 0 0 0;
+  margin: 0.3rem 0 0 0;
   padding: 0.25rem 0;
   color: rgb(255, 217, 0);
   font-family: $sans-serif-narrow;

@@ -8,44 +8,44 @@
             <span>&#127804; Total {{sum}} posts</span> 
       </li>
       <li>
-        <span class="nav__sub-title">backend</span>
+        <span class="nav__sub-title">language</span>
             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "typescript" %}
+                        <li><a href="/categories/typescript" class=""> Typescript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
                 {% for category in site.categories %}
                     {% if category[0] == "java" %}
                         <li><a href="/categories/java" class=""> Java ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "spring" %}
-                        <li><a href="/categories/spring" class=""> Spring ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "jpa" %}
-                        <li><a href="/categories/jpa" class=""> Jpa ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "python" %}
                         <li><a href="/categories/python" class=""> Python ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">React</span>
+        <span class="nav__sub-title">backend</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "spring" %}
+                        <li><a href="/categories/spring" class=""> Spring ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "jpa" %}
+                        <li><a href="/categories/jpa" class=""> Jpa ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">frontend</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "react" %}
                         <li><a href="/categories/react" class=""> React-official ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "redux" %}
                         <li><a href="/categories/redux" class=""> Redux ({{category[1].size}})</a></li>
@@ -59,15 +59,11 @@
                         <li><a href="/categories/nest-next" class=""> Nest-Next Project ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "nestjs" %}
                         <li><a href="/categories/nestjs" class=""> Nestjs(backend)({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "nestjs" %}
                         <li><a href="/categories/nextjs" class=""> Nextjs(frontend)({{category[1].size}})</a></li>
@@ -81,8 +77,6 @@
                         <li><a href="/categories/os" class=""> Operating System ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "network" %}
                         <li><a href="/categories/network" class=""> Network ({{category[1].size}})</a></li>
@@ -93,7 +87,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "blockchain-basic" %}
-                        <li><a href="/categories/blockchain-basic" class=""> Blockchain-basic ({{category[1].size}})</a></li>
+                        <li><a href="/categories/blockchain-basic" class=""> Blockchain-Basic ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -104,14 +98,12 @@
                         <li><a href="/categories/oauth" class=""> OAuth 2.0 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>  
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "jwt" %}
                         <li><a href="/categories/jwt" class=""> JWT ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul> 
+            </ul>  
         <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
@@ -119,8 +111,6 @@
                         <li><a href="/categories/programmers" class=""> Programmers ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
-            </ul>
-            <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "BJ" %}
                         <li><a href="/categories/bj" class=""> Baekjoon ({{category[1].size}})</a></li>
