@@ -213,4 +213,15 @@ export class AppModule {}
 끝!
 
 
-
+<br>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-i5+5+1+2-3"
+     data-ad-client="ca-pub-6596953683217931"
+     data-ad-slot="2948544388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
