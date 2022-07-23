@@ -25,6 +25,8 @@ nest.js + next.js 가계부 만들기
 이렇게 나눠서 개발하고, 결과를 확인할 때도 각각의 프로젝트를 실행하는 서로 다른 명령어를 사용하였습니다. 
 **nest-next**는, 두개의 서버를 하나로 **통합**해줍니다.
 
+>nest-next provides a nestjs module to integrate next.js into a nest.js application, it allows the rendering of next.js pages via nestjs controllers and providing initial props to the page as well.
+
 로직은 이러합니다. 우리가 요청을 보내면 그 요청은 제일 먼저 controller로 들어오겠죠? 그럼 
 `@Render`를 이용하여, pages폴더에 있는 **어떤 page를 보여줄지 지정**하는 것입니다. 그리고 controller에서 보낸 데이터를 해당 페이지에 뿌려주게 됩니다. 
 
