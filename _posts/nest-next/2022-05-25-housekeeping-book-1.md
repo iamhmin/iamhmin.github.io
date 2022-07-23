@@ -155,7 +155,7 @@ package.json도 이렇게 변경해줍니다.
 "scripts": {
     "prebuild": "rimraf dist",
     "build": "yarn build:next && yarn build:nest",
-    "build:next": "next build",
+    "build:next": "next build --no-lint",
     "build:nest": "nest build --path ./tsconfig.server.json",
     "start": "node ./dist/server/main.js",
     "start:next": "next dev",
