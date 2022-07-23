@@ -17,69 +17,139 @@ nest.js + next.js 가계부 만들기
 - [4. swagger 설치와 간단한 crud api 개발 ](https://iamhmin.github.io/nest-next/housekeeping-book-4/)  
 - [5. nest-next 패키지로 서버 통합하기 ](https://iamhmin.github.io/nest-next/housekeeping-book-5/)  
 
+
+## 프로젝트 개요
+프로젝트 이름은 housekeeping-book입니다. 이 프로젝트에서는 
+1. OAUTH 2.0(OIDC)을 적용한 카카오 로그인
+2. nest-next 환경에서 서버와 프론트간에 어떻게 데이터를 주고받는지 실습
+3. next 프론트에서 어떻게 state관리를 하는지 실습
+4. typeORM, antD, swagger, mariaDB 연동 실습
+정도를 해보려고 합니다.
+
+
 ## 초기세팅
+프로젝트를 하다 보면 여러 언어와 프레임워크를 접하게 됩니다. 저도 파이썬, 자바, 자바스크립트, PHP등을 업무에 써보았는데요, 이렇게 다양한 언어를 사용하다보면 쓰임새에 혼동이 오는 경우가 종종 있습니다. nest+next의 장점은 프론트와 백에서 같은 언어를 사용할 수 있다는 것이고, 요새 각광받는 Typescript를 적용할 수 있고, nest-next 패키지를 통해 서버 통합이 가능하다는 것입니다. 
 
-[여기](https://dev.to/yakovlev_alexey/creating-a-project-with-nestjs-nextjs-3i1i)를 참고하여 세팅하고 있다. 위의 블로그에서는 이름 구별을 하기 위해 nest.js는 그대로 쓰고, next.js는 대문자로 NEXT.js라고 써서 나도 그렇게 쓰려고 한다.
+저는 [여기](https://dev.to/yakovlev_alexey/creating-a-project-with-nestjs-nextjs-3i1i)를 참고하여 세팅하였습니다. 이 블로그에서는 이름 구별을 하기 위해 nest.js는 그대로 쓰고, next.js는 대문자로 NEXT.js라고 쓰고 있는데요, 저도 이 방식대로 적겠습니다. NEXT.js는 프론트 프레임워크이고, nest.js는 백엔드입니다.
 
-### nest.js installation
+### 1. nest.js installation
 
-아래의 명령어를 터미널에 작성한다.
->$ npx @nestjs/cli new housekeeping-book
+먼저 nest.js를 설치해보겠습니다. visual studio code를 켜고, file -> new window로 새 창을 켜줍니다. 그리고 터미널 창(command prompt)을 열어줍니다.
 
-나는 가계부를 만들어볼 것이기 때문에 housekeeping-book라고 작명했다. 여기까지 하면 알아서 폴더들이 만들어진다. 
+아래는 nest프로젝트 설치를 위한 명령어입니다.
+>$ npm i -g @nestjs/cli
 
-다시 터미널을 키고
+그리고, 다음의 명령어를 통해 새로운 가계부 프로젝트를 만들어 보겠습니다.
 
->$ yarn start:dev
+>$ nest new housekeeping-book
 
-를 입력한다.
+![Alt text](/assets/images/nest-next/nest-next1.png)
+<br>
+<br>
+<br>
+그럼 패키지 매니저를 고르는 옵션이 뜨는데, 저는 yarn을 선택하였습니다. 자, 어쨌든 위의 명령어를 작성하고 잘 실행되었다면, 자동으로 폴더들이 만들어질 것입니다. 
 
-나는 여기서 yarn 오류가 났었는데 
-[여기](https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install)를 보고 수정했다.
+>$ cd housekeeping-book  //housekeeping-book 폴더로 이동해서,
+<br>
+>$ yarn start:dev  // 프로젝트를 실행해봅시다.
+
+>혹시 여기서 yarn 관련 오류가 발생하신다면,  
+[여기(stackoverflow))](https://stackoverflow.com/questions/46013544/yarn-install-command-error-no-such-file-or-directory-install)를 보고 수정해주세요.
+<br>
+<br>
 
 ![Alt text](/assets/images/20220526_105305801.png)
 
-오래걸려서 깜짝 놀랐다. 아무튼 위와 같이 실행되고,
-브라우저에 localhost:3000을 입력하면 아래와 같이 나온다. 
+<br>
+<br>
+위와 같이 실행되고, 브라우저에 localhost:3000을 입력하면 아래와 같이 나옵니다.
+<br>
+<br>
 
 ![Alt text](/assets/images/20220525_185221035.png)
+<br>
+<br>
+nestjs 세팅이 완료되었습니다! 짝짝
+<br>
+<br>
 
-완성!
+* * *
+광고
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-i5+5+1+2-3"
+     data-ad-client="ca-pub-6596953683217931"
+     data-ad-slot="2948544388"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+* * *
 
-### NEXT.js installation
+### 2.NEXT.js installation
 
-next와 react, react-dom을 설치해준다.
+이번엔 프론트에 해당하는 NEXT.js를 설치할 차례입니다. 여기부터는 vscode에서 만들어진 housekeeping-book폴더를 열고 해보겠습니다. 
 
->$ yarn add next react react-dom
-$yarn add -D @types/react @types/react-dom eslint-config-next
+>주의! 아래의 명령어는 housekeeping-book에서 실행하셔야 합니다!
 
-그 다음에 
+>$ yarn add next react react-dom  
 
->$yarn next dev 
+>$ yarn add -D @types/react @types/react-dom eslint-config-next typescript
 
-로 NEXT.js를 실행한다. 실행하고 나면 next-env.d.ts라는 파일이 새로 생긴다.
+위와 같이 각종 패키지들을 설치한 뒤,
 
+>$ yarn next dev 
 
-![Alt text](/assets/images/20220526_113931429.png)
+로 NEXT.js를 실행해봅시다. 아마 다음과 같은 에러가 뜰 것입니다.
+<br>
 
-폴더구조를 위와 같이 살짝 변경하였다. 그리고 tsconfig.build.json을 tsconfig.server.json으로 바꿨다. nest.js만을 위한 config파일을 만들기 위함이다. 그리고 내용을 이렇게 변경해준다.
+![Alt text](/assets/images/nest-next/20220723_104517.png)
+
+<br>
+pages 폴더를 root폴더에 생성해 줍니다. 그리고 다시 `$ yarn next dev`하면 이번엔 문제 없이 실행이 완료됩니다.
+실행하고 나면 next-env.d.ts라는 파일과 .next 폴더가 새로 생깁니다.
+
+<br>
+
+여기까지 잘 하셨나요?ㅎㅎ 그럼 tsconfig.json을 조금 수정해보겠습니다. 아래 exclude에 몇가지를 추가해줍니다.
+<br>
+
+```json
+// ./tsconfig.json
+{
+  "exclude": [
+    "node_modules", "test", "dist", "**/*spec.ts"
+  ]
+}
+
+```
+<br>
+<br>
+
+그리고 tsconfig.build.json을 tsconfig.server.json으로 바꿔줍니다. nest.js만을 위한 config파일을 만들기 위함입니다. 그리고 내용을 이렇게 변경해주겠습니다.
+<br>
 
 ```json
 // ./tsconfig.server.json
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-        "noEmit": false
-    },
-    "include": [
-        "./src/server/**/*.ts",
-        "./src/shared/**/*.ts",
-        "./@types/**/*.d.ts"
-    ]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+      "noEmit": false
+  },
+  "include": [
+        "./src/**/*.ts",
+        "./src/**/**/*.ts",
+      "./@types/**/*.d.ts"
+  ],
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts", ".next"]
 }
 ```
 
-package.json도 변경해준다
+<br>
+
+package.json도 이렇게 변경해줍니다.
 ```json
 // ./package.json
 "scripts": {
@@ -95,12 +165,30 @@ package.json도 변경해준다
     // ... lint/format/test etc
 },
 ```
+<br>
+<br>
 
-이제 frontend기본 구성을 할 차례이다.
-인덱스 파일과 app 컴포넌트를 src/pages에 저장해준다. 소스는 다음과 같다.
+마지막으로 nest-cli.json도 이렇게 변경해줍니다.
+```json
+//./nest-cli.json
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "entryFile": "main"
+}
 
 ```
-// ./src/pages/_app.tsx
+<br>
+<br>
+
+이제 frontend의 기본 구성을 할 차례입니다.
+인덱스 파일과 app 컴포넌트를 pages에 저장해줄 것입니다. 소스는 다음과 같습니다. 
+<br>
+
+_app.tsx
+``` javascript
+// ./pages/_app.tsx
 import type { AppProps /*, AppContext */ } from 'next/app'
 
 
@@ -112,9 +200,12 @@ export default App;
 
 
 ```
+<br>
+<br>
 
-```
-// ./src/pages/_document.tsx
+_document.tsx
+```javascript
+// ./pages/_document.tsx
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
@@ -133,10 +224,12 @@ export default class MyDocument extends Document {
 }
 ```
 
+<br>
+<br>
 
-
-```
-// ./src/pages/index.tsx
+index.tsx
+```javascript
+// ./pages/index.tsx
 import { FC } from 'react';
 
 const Home: FC = () => {
@@ -153,19 +246,23 @@ export default Home;
 /node_modules
 /.next
 ```
-이렇게 next를 추가해주는 것도 잊지 말자.
+이렇게 next를 추가해주세요. 그래야 깃에 .next파일이 올라가지 않습니다.
 
 
 이제 
 >$ yarn start:next
 를 실행해주면
 
+<br>
+<br>
+
 ![Alt text](/assets/images/20220526_115145957.png)
 
+<br>
+<br>
 
-이렇게 3000포트 위로 NEXT가 뜬다. 
-next 설정까지 완성! 
-일단 여기까지는 너무 재밌다ㅎㅎ~~
+이렇게 3000포트 위로 NEXT가 뜨게 됩니다.
+next 설정까지 완성하였습니다!^^
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
      crossorigin="anonymous"></script>
