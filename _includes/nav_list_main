@@ -55,18 +55,18 @@
         <span class="nav__sub-title">nest-next</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "nest" %}
+                        <li><a href="/categories/nest" class=""> Nest.js ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "next" %}
+                        <li><a href="/categories/next" class=""> Next.js ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
                     {% if category[0] == "nest-next" %}
                         <li><a href="/categories/nest-next" class=""> Nest-Next Project ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% for category in site.categories %}
-                    {% if category[0] == "nestjs" %}
-                        <li><a href="/categories/nestjs" class=""> Nestjs(backend)({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% for category in site.categories %}
-                    {% if category[0] == "nestjs" %}
-                        <li><a href="/categories/nextjs" class=""> Nextjs(frontend)({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

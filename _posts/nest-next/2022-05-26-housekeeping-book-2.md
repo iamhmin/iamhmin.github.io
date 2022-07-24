@@ -2,7 +2,7 @@
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 2 - ant Design 추가 및 기본 레이아웃"
 categories : nest-next
-tag : [nestjs, node.js, nextjs]
+tag : [nestjs, antd, nextjs]
 author_profile: true
 sidebar_main: true
 toc: true
@@ -186,7 +186,9 @@ export default function CustomLayout({ children }) {
 
 
 ## 4. _app.tsx, index.tsx 수정
-이제 애플리케이션을 실행할때, 레이아웃이 자동으로 포함되도록 _app.tsx와 index.tsx를 수정할 차례입니다. 다음의 코드로 수정해주세요.
+이제 애플리케이션을 실행할때, 레이아웃이 자동으로 포함되도록 _app.tsx와 index.tsx를 수정할 차례입니다. 다음의 코드로 수정해주세요. 
+
+>주의! `import './App.css';`는 반드시 `_app.tsx`에만 정의합니다!
 
 ### 4-1._app.tsx
 ``` javascript

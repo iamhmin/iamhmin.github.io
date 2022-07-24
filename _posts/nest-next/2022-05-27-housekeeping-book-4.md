@@ -2,7 +2,7 @@
 layout: single
 title: "[nest.js + next.js] 가계부 만들기 4 - swagger설치와 crud rest api개발"
 categories : nest-next
-tag : [nestjs, node.js, nextjs]
+tag : [nestjs, nextjs, swagger, rest api]
 author_profile: true
 sidebar_main: true
 toc: true
