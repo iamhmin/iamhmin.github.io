@@ -107,6 +107,11 @@
         <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "algorithm-with-typescript" %}
+                        <li><a href="/categories/algorithm-with-typescript" class=""> with typescript ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
                     {% if category[0] == "Programmers" %}
                         <li><a href="/categories/programmers" class=""> Programmers ({{category[1].size}})</a></li>
                     {% endif %}
