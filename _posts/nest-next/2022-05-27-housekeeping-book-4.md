@@ -218,21 +218,6 @@ export class AppModule {}
 
 여기까지 하면 기본적인 api는 완성되었습니다! 이제 swagger로 테스트만 해보면 됩니다.
 
-* * *
-광고
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-* * *
-
 ## 3. 실행
 
 >$ yarn start:dev
@@ -262,16 +247,3 @@ record 테이블에 데이터가 새로 생성된 걸 볼 수 있습니다.
 
 수고하셨습니다^^
 
-
-<br>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>

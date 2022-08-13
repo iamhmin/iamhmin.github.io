@@ -161,21 +161,6 @@ console.log('array+hashmap으로 계산', endTime2 - startTime2);
 그렇게 큰 차이는 아니지만, 가장 작은 배열이 작으면 작을수록 set을 이용한 방법이 효과적일 것 같습니다. 더 공부한 후 추가할 내용이 있으면 추가해겠습니다^^ㅎ
 
 
-* * *
-광고
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-* * *
-
 
 
 

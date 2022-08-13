@@ -20,25 +20,12 @@ typescript는 javascript의 상위 집합 언어입니다. javascript의 장점�
 이 포스트에서는 왜 typescript의 let과 const가 javascript의 선언 방식인 var보다 선호되는 지를 살펴보겠습니다.
 
 ### 1-1. var
-var는 javascript에서 변수 선언을 할 때 쓰이는 키워드입니다.
+var는 javascript에서 변수 선언을 할 때 쓰이는 키워드입니다. 
 ### 1-2. let
 let은 var와 어느 정도 유사하지만, 사용자가 JavaScript에서 자주 마주치는 결함을 피할 수 있게 해줍니다. 
 ### 1-3. const
 const는 let의 기능이 강화된 것으로 변수에 재할당을 방지합니다.
 
-
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
 
 ## 참고
 [[typescriptlang.org]](https://www.typescriptlang.org/docs/handbook/variable-declarations.html) 
