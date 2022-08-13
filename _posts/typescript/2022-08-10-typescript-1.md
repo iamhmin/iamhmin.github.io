@@ -17,10 +17,10 @@ toc_sticky: true
 
 ## 1. var vs let vs const
 typescript는 javascript의 상위 집합 언어입니다. javascript의 장점이자 단점이 변수 혹은 객체의 타입을 지정하지 않아 유연하다는 것인데, 이것이 프로젝트의 규모가 커짐에 따라 오류 발생의 가능성을 높입니다. 이것을 보완하기 위한 것이 정적 타입 검사를 제공하는 typescript 입니다.
-이 포스트에서는 왜 typescript의 let과 const가 javascript의 선언 방식인 var보다 선호되는 지를 살펴보겠습니다.
+이 포스트에서는 typescript와 javascript의 변수 선언방식을 알아보고, 왜 let과 const가 var보다 선호되는 지를 살펴보겠습니다.
 
 ### 1-1. var
-var는 javascript에서 변수 선언을 할 때 쓰이는 키워드입니다. 
+
 ### 1-2. let
 let은 var와 어느 정도 유사하지만, 사용자가 JavaScript에서 자주 마주치는 결함을 피할 수 있게 해줍니다. 
 ### 1-3. const
