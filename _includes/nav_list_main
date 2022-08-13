@@ -108,7 +108,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "algorithm-with-typescript" %}
-                        <li><a href="/categories/algorithm-with-typescript" class=""> with typescript ({{category[1].size}})</a></li>
+                        <li><a href="/categories/algorithm-with-typescript" class=""> with Typescript ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
                 {% for category in site.categories %}

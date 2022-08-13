@@ -1,8 +1,8 @@
 ---
-title: "JWT(JSON Web Token)"
+title: "Typescript"
 layout: archive
 classes: wide
-permalink: categories/jwt
+permalink: categories/typescript
 author_profile: true
 sidebar_main: true
 ---
@@ -10,6 +10,6 @@ sidebar_main: true
 
 ***
 
-{% assign posts = site.categories.jwt %}
+{% assign posts = site.categories.typescript %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}
  
