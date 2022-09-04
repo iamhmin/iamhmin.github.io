@@ -15,10 +15,33 @@ toc_sticky: true
 - [2. 문자열 - string - 관련 문법](https://iamhmin.github.io/typescript/typescript-2/) 
 - [3. 배열 - array - 관련 문법](https://iamhmin.github.io/typescript/typescript-3/) 
 
-## 1. 
-작성중
+### 문자열의 길이 : length
 
+```typescript
+let str:string = 'test_string';
+console.log(str.length) //11
+```
 
+### 문자열 대체하기 : replace
 
-## 참고
-[[typescriptlang.org]](https://www.typescriptlang.org/docs/handbook/variable-declarations.html) 
+```typescript
+let str:string = 'test_string';
+let new_str:string = str.replace('_', ':');
+console.log(new_str) //"test:string"
+```
+
+### 문자열 분리하기 (구분자로 분리하여 자르기) : split
+
+```typescript
+let str:string = 'test_string';
+let parts:string[] = str.split('_');
+console.log('parts[0]', parts[0]); // "parts[0]",  "test" 
+console.log('parts[1]', parts[1]); // "parts[1]",  "string" 
+```
+
+### 문자열 합치기 : concat
+
+```typescript
+let concat_string:string = str.concat('_concat');
+console.log(concat_string)
+```
