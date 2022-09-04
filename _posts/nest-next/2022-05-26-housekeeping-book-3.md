@@ -206,15 +206,4 @@ DB를 연동하는 방법에는 여러가지가 있습니다. 더 자세한 내�
 <br>
 끝!
 
-<br>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+

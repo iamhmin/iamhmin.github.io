@@ -26,12 +26,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">backend</span>
+            <span style="color: coral">- - - - - - - - - - - - - -</span> 
+        <!-- <span class="nav__sub-title">Backend</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "spring" %}
-                        <li><a href="/categories/spring" class=""> Spring ({{category[1].size}})</a></li>
-                    {% endif %}
+                {% if category[0] == "nest" %}
+                    <li><a href="/categories/nest" class=""> Nest.js ({{category[1].size}})</a></li>
+                {% endif %}
                 {% endfor %}
                 {% for category in site.categories %}
                     {% if category[0] == "jpa" %}
@@ -39,8 +40,14 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">frontend</span>
+            <span style="color: coral">- - - - - - - - - - - - - -</span>   -->
+        <span class="nav__sub-title">Frontend</span>
             <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "next" %}
+                    <li><a href="/categories/next" class=""> Next.js ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
                 {% for category in site.categories %}
                     {% if category[0] == "react" %}
                         <li><a href="/categories/react" class=""> React-official ({{category[1].size}})</a></li>
@@ -52,25 +59,22 @@
                     {% endif %}
                 {% endfor %}
             </ul>   
-        <span class="nav__sub-title">nest-next</span>
+            <span style="color: coral">- - - - - - - - - - - - - -</span> 
+        <span class="nav__sub-title">Toy Projects</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "nest" %}
-                        <li><a href="/categories/nest" class=""> Nest.js ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% for category in site.categories %}
-                    {% if category[0] == "next" %}
-                        <li><a href="/categories/next" class=""> Next.js ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-                {% for category in site.categories %}
                     {% if category[0] == "nest-next" %}
-                        <li><a href="/categories/nest-next" class=""> Nest-Next Project ({{category[1].size}})</a></li>
+                        <li><a href="/categories/nest-next" class=""> Nest + Next ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+                {% for category in site.categories %}
+                    {% if category[0] == "sbp" %}
+                        <li><a href="/categories/sbp" class=""> Springboot + Next ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Computer Science</span>
+            <span style="color: coral">- - - - - - - - - - - - - -</span>
+        <!-- <span class="nav__sub-title">Computer Science</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "os" %}
@@ -83,6 +87,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span style="color: coral">- - - - - - - - - - - - - -</span> -->
         <span class="nav__sub-title">Blockchain</span>
             <ul>
                 {% for category in site.categories %}
@@ -91,6 +96,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span style="color: coral">- - - - - - - - - - - - - -</span> 
         <span class="nav__sub-title">Security</span>  
             <ul>
                 {% for category in site.categories %}
@@ -104,6 +110,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>  
+            <span style="color: coral">- - - - - - - - - - - - - -</span>
         <span class="nav__sub-title">Algorithm</span>
             <ul>
                 {% for category in site.categories %}
@@ -122,6 +129,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <span style="color: coral">- - - - - - - - - - - - - -</span>
         <span class="nav__sub-title">Etc</span>
             <ul>
                 {% for category in site.categories %}

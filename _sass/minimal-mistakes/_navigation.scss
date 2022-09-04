@@ -181,7 +181,7 @@
 
   a {
     display: block;
-    margin: 0 1rem;
+    margin: 0 0.3rem;
     color: rgb(255, 217, 0);
     text-decoration: none;
     -webkit-transition: none;
@@ -342,7 +342,7 @@
      ========================================================================== */
 
 .nav__list {
-  margin-bottom: 0.2em;
+  margin-bottom: 0.1em;
 
   input[type="checkbox"],
   label {
@@ -447,7 +447,7 @@
 
 .nav__list .nav__items {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1rem;
 
   a {
     color: inherit;
@@ -475,7 +475,7 @@
   }
 
   span {
-    font-size: $type-size-6;
+    font-size: $type-size-7;
   }
 }
 
@@ -485,8 +485,8 @@
     transition: 0.5s ease-in-out;
     max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
     overflow: visible;
-    opacity: 1;
-    margin-top: 1em;
+    opacity: 0.5;
+    margin-top: 0.2em;
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
     transform: translate(0, 0);
@@ -495,7 +495,7 @@
 
 .nav__title {
   margin: 0;
-  padding: 0.5rem 0.75rem;
+  padding: 0.1rem 0.2rem;
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;
@@ -503,9 +503,9 @@
 
 .nav__sub-title {
   display: block;
-  margin: 0.3rem 0 0 0;
-  padding: 0.25rem 0;
-  color: rgb(255, 217, 0);
+  margin: 0.2rem 0 0 0;
+  padding: 0.2rem 0;
+  color: rgb(216, 183, 0);
   font-family: $sans-serif-narrow;
   font-size: $type-size-6;
   font-weight: bold;

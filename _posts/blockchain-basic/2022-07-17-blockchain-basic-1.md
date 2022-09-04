@@ -69,18 +69,6 @@ Proof-of-authority is used mainly by private companies or organizations that use
 - Nothing at Stake Problem : In the event of a fork, whether the fork is accidental or a malicious attempt to rewrite history and reverse a transaction, the optimal strategy for any miner is to mine on every chain, so that the miner gets their reward no matter which fork wins.
 
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6596953683217931"
-     crossorigin="anonymous"></script>
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="fluid"
-     data-ad-layout-key="-i5+5+1+2-3"
-     data-ad-client="ca-pub-6596953683217931"
-     data-ad-slot="2948544388"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
 ## Reference
 [What Is a Consensus Mechanism?](https://www.thebalance.com/what-is-a-consensus-mechanism-5211399#toc-pros-and-cons-of-consensus-mechanisms) 
 
