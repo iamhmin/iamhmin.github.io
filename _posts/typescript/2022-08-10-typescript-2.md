@@ -43,5 +43,5 @@ console.log('parts[1]', parts[1]); // "parts[1]",  "string"
 
 ```typescript
 let concat_string:string = str.concat('_concat');
-console.log(concat_string)
+console.log(concat_string) //"test_string_concat" 
 ```
